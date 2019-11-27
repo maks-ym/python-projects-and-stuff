@@ -1,29 +1,4 @@
-import time
-import matplotlib.pyplot as plt
-
-
-def timeit(func):
-    def wrapper(*args, **kw):
-        res_time = time.time()
-        func_res = func(*args, **kw)
-        res_time = time.time() - res_time
-        return res_time, func_res, func.__name__
-    return wrapper
-
-
-def create_subplot(place, x, y, title="Figure"):
-    plt.subplot(place)
-    plt.plot(x, y)
-    plt.title(title)
-
-
-def create_figure(dict_xy):
-    plt.figure()
-    for i, (k, v) in enumerate(res_time_arrays.items()):
-        p = "12" + str(i+1)
-        print(p)
-        create_subplot(p, list(range(len(v))), v, k)
-    plt.show()
+from utils import *
 
 # Iterator for next power of two.
 class NextPowTwo:
@@ -43,7 +18,7 @@ class NextPowTwo:
             raise StopIteration
 
 
-# Iterator for next power of two.
+# Improved iterator for next power of two
 class NextPowTwoImproved:
     def __init__(self, max_ele = 0):
         self.max_ele = max_ele
