@@ -1,6 +1,6 @@
-# Порівняння продуктивності генераторів в Python :ua:
+# Порівняння продуктивності генераторів в Python ![UA](https://github.com/ashhitch/ISO-country-flags-icons/blob/master/dist/flags/png/ua.png)
 
-:gb: _[English version](readme_en.md)_
+![EN](https://github.com/stevenrskelton/flag-icon/blob/master/png/16/country-4x3/gb.png) _[English version](readme_en.md)_
 
 Ідея для тесту проста і прийшла до мене в момент прочитання цієї [статті на Medium](https://medium.com/quick-code/advanced-python-made-easy-eece317334fa).
 

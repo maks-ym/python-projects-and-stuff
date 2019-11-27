@@ -1,6 +1,6 @@
-# Performance comparison of generators in Python :gb:
+# Performance comparison of generators in Python ![EN](https://github.com/ashhitch/ISO-country-flags-icons/blob/master/dist/flags/png/gb.png)
 
-:ua: _[Українська версія](readme.md)_
+![UA](https://github.com/stevenrskelton/flag-icon/blob/master/png/16/country-4x3/gb.png) _[Українська версія](readme.md)_
 
 The idea for test is simple and came to me at the moment of reading this [article on Medium](https://medium.com/quick-code/advanced-python-made-easy-eece317334fa).
 
