@@ -1,2 +1,6 @@
 .idea
+*key.py
 *.pyc
+*/venv/
+/web-scraping/python-book2-scraper/
+/money-management/
