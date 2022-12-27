@@ -1,6 +1,11 @@
 .idea
+.vscode
 *key.py
 *.pyc
-*/venv/
-/web-scraping/python-book2-scraper/
+**/venv/
+/algorithms/
+/dijkstra-board/
 /money-management/
+/rock-paper-scissors/
+/web-scraping/python-book2-scraper/
+
