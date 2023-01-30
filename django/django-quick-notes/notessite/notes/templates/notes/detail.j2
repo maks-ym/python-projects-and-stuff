@@ -1,0 +1,16 @@
+<h2>
+{{ note.title }}
+</h2>
+
+<h5>
+{{ note.update_date }}
+</h5>
+
+<p>
+{{ note.content }}
+</p>
+
+<a href="{% url 'notes:edit' note.id %}">Edit</button>
+<button>Delete</button>
+<br><br>
+<a href="{% url 'notes:home' %}">Back to notes list</a>

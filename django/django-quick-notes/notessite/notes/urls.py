@@ -1,4 +1,4 @@
-"""notessite URL Configuration
+"""notes app URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -13,10 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import include, path
 
+from django.urls import path
+from .views import IndexView, DetailView, AddView, EditView
+
+app_name = 'notes'
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('notes/', include('notes.urls'))
+    path('', IndexView.as_view(), name='home'),
+    path('list', IndexView.as_view(), name='home'),
+    path('<int:pk>', DetailView.as_view(), name='detail'),
+    path('add', AddView.as_view(), name='add'),
+    path('<int:pk>/edit', EditView.as_view(), name='edit')
 ]
