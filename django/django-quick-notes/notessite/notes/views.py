@@ -33,4 +33,8 @@ class EditView(generic.edit.UpdateView):
     fields = ['title', 'content']
     # success_url = reverse_lazy('notes:edit') -- what to set this with notification of success
     success_url = reverse_lazy('notes:home')
-    
+
+class DeleteView(generic.edit.DeleteView):
+    model = Note
+    template_name = 'notes/delete.j2'
+    success_url = reverse_lazy('notes:home')

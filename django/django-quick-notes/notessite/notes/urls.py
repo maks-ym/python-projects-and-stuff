@@ -15,7 +15,7 @@ Including another URLconf
 """
 
 from django.urls import path
-from .views import IndexView, DetailView, AddView, EditView
+from .views import AddView, DeleteView, DetailView, EditView, IndexView
 
 app_name = 'notes'
 urlpatterns = [
@@ -23,5 +23,6 @@ urlpatterns = [
     path('list', IndexView.as_view(), name='home'),
     path('<int:pk>', DetailView.as_view(), name='detail'),
     path('add', AddView.as_view(), name='add'),
-    path('<int:pk>/edit', EditView.as_view(), name='edit')
+    path('<int:pk>/edit', EditView.as_view(), name='edit'),
+    path('<int:pk>/delete', DeleteView.as_view(), name='delete')
 ]

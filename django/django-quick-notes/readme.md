@@ -8,7 +8,7 @@ Assumptions:
 - [x] PostgreSQL DB
 - [x] create note
 - [x] modify note
-- [ ] delete note
+- [x] delete note
 - [ ] add an image to a note
 - [ ] login page for users (create user/login/modify profile/delete user)
 - [ ] add favicon
